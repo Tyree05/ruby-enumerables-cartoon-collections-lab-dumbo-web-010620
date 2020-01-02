@@ -16,7 +16,7 @@ end
 
 def long_planeteer_calls(sayings)
   ToF = false
-  sayings.all? { |says| 
+  sayings.all? { |says|
     if says.length >= 4
       ToF = true
     end
