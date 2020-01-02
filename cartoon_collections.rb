@@ -25,9 +25,8 @@ def long_planeteer_calls(sayings)
 end
 
 def find_the_cheese(inventory)
-
   cheese_types = ["cheddar", "gouda", "camembert"]
-  inventory.find_index { |cheese|
-    cheese = inventory
+  inventory.find_index { |i|
+    i.cheese_types?
   }
 end
