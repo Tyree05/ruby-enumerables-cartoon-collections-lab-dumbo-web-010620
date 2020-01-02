@@ -27,6 +27,7 @@ end
 def find_the_cheese(inventory)
   cheese_types = ["cheddar", "gouda", "camembert"]
   result = false
-  inventory.cheese_types.member? :SEEK_NO_FURTHER
+  if inventory.cheese_types.member? :SEEK_SET
+  end
   result
 end
