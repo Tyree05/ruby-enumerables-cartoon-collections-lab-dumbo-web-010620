@@ -1,3 +1,4 @@
+require 'pry'
 def roll_call_dwarves(names)
   names.each_with_index { |name, index|
     index +=1
@@ -7,8 +8,7 @@ end
 
 def summon_captain_planet(elements)
   elements.map { |calls|
-    calls.capitalize
-  puts "#{calls} !"
+  puts "#{calls.capitalize} !"
   }
 end
 
