@@ -15,10 +15,10 @@ def summon_captain_planet(elements)
 end
 
 def long_planeteer_calls(sayings)
-  toF = false
+  toF = true
   sayings.all? { |says|
     if says.length >= 4
-      toF = true
+      toF = false
     end
   }
   toF
