@@ -12,6 +12,7 @@ def summon_captain_planet(elements)
   new_el << calls.capitalize
   puts "#{calls.capitalize}!"
   }
+  new_el
 end
 
 def long_planeteer_calls(sayings)
