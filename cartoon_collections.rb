@@ -27,7 +27,7 @@ end
 def find_the_cheese(inventory)
     cheese_types = ["cheddar", "gouda", "camembert"]
     index = 0
-    result = false
+    result = nil
   while index < cheese_types.length do
     if inventory.include? cheese_types[index]
       result = cheese_types[index]
