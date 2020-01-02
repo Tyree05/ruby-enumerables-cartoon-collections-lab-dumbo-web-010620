@@ -31,6 +31,7 @@ def find_the_cheese(inventory)
   while index < cheese_types.length do
     if inventory.include? cheese_types[index]
       result = cheese_types[index]
+      return result
     end
     index += 1
   end
