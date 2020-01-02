@@ -27,6 +27,6 @@ end
 def find_the_cheese(inventory)
   cheese_types = ["cheddar", "gouda", "camembert"]
   inventory.find_index { |i|
-    i.cheese_types?
+    i = cheese_types
   }
 end
