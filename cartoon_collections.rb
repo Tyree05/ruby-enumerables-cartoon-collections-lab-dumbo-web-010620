@@ -15,8 +15,13 @@ def summon_captain_planet(elements)
 end
 
 def long_planeteer_calls(sayings)
-  sayings.all? { |says| says.length >= 5
+  ToF = false
+  sayings.all? { |says| 
+    if says.length >= 4
+      ToF = true
+    end
   }
+  ToF
 end
 
 def find_the_cheese# code an argument here
