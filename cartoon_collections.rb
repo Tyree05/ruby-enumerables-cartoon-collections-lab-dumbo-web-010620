@@ -25,9 +25,14 @@ def long_planeteer_calls(sayings)
 end
 
 def find_the_cheese(inventory)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  result = false
-  if inventory.cheese_types.member? :SEEK_SET
+    cheese_types = ["cheddar", "gouda", "camembert"]
+    index = 0
+    result = false
+  while index < cheese_types.length do
+    if inventory.member? cheese_types[index]
+      result = cheese_types[index]
+    end
+    index += 1
   end
-  result
+    result
 end
