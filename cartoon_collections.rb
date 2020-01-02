@@ -7,7 +7,9 @@ def roll_call_dwarves(names)
 end
 
 def summon_captain_planet(elements)
+  new_el = []
   elements.map { |calls|
+  new_el << calls.capitalize
   puts "#{calls.capitalize}!"
   }
 end
