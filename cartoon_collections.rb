@@ -26,7 +26,7 @@ end
 
 def find_the_cheese(inventory)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  inventory.find_index { |i|
-    i = cheese_types
-  }
+  result = false
+  inventory.cheese_types.member? :SEEK_NO_FURTHER
+  result
 end
